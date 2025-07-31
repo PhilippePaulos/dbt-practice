@@ -1,4 +1,4 @@
-name: 'dbt_practice'
+name: 'jaffle_shop'
 version: '1.0.0'
 config-version: 2
 
@@ -22,7 +22,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 # Configuring models
 models:
-  dbt_practice:
-    # Applies to all files under models/example/
-    #example:
-    #  +materialized: table
+  jaffle_shop:
+    marts:
+      +materialized: table
